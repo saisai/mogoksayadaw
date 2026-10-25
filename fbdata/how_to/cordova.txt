@@ -1,0 +1,137 @@
+https://stackoverflow.com/questions/7076240/install-an-apk-file-from-command-prompt
+
+adb devices -l
+adb install F:\android\hello\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+adb uninstall com.example.hello
+adb uninstall <package_name>
+
+
+
+usb drivers
+https://www.xiaomigeek.com/download-xiaomi-usb-driver-windows.html
+
+
+cordova build
+
+
+cordova plugin add cordova-plugin-media
+
+
+cordova plugin add cordova-plugin-media
+Installing "cordova-plugin-media" for android
+Installing "cordova-plugin-file" for android
+Android Studio project detected
+
+The Android Persistent storage location now defaults to "Internal". Please check this plugin's README to see if your application needs any changes in its config.xml.
+
+If this is a new application no changes are required.
+
+If this is an update to an existing application that did not specify an "AndroidPersistentFileLocation" you may need to add:
+
+      "<preference name="AndroidPersistentFileLocation" value="Compatibility" />"
+
+to config.xml in order for the application to find previously stored files.
+
+Adding cordova-plugin-media to package.json
+Saved plugin info for "cordova-plugin-media" to config.xml
+
+
+https://stackoverflow.com/questions/25927124/android-studio-how-to-uninstall-apk-or-execute-adb-command-automatically-bef
+https://nodejs.org/en/download/
+
+
+remove files duplicate
+https://unix.stackexchange.com/questions/277697/whats-the-quickest-way-to-find-duplicated-files
+find . ! -empty -type f -exec md5sum {} + | sort | uniq -w32 -dD
+fdupes -r /path/to/dup/directory
+
+
+cordova create yourapp com.yourapp.yourapp yourapp
+cd yourapp
+cordova platform add android
+cordova platform ls
+cordova build
+
+cordova plugin add cordova-plugin-media
+
+adb install F:\android\yourapp\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+
+adb uninstall com.yourapp.yourapp
+
+cordova platform rm android
+cordova platform add android
+
+msys2
+64bit env.
+
+pacman -S mingw-w64-x86_64-nodejs
+
+32bit env.
+
+pacman -S mingw-w64-i686-nodejs
+https://stackoverflow.com/questions/46473196/installing-nodejs-and-npm-on-msys2
+
+
+cordova create mogoksayadaw com.mogoksayadaw.mogoksayadaw MogokSayadaw
+cd mogoksayadaw
+cordova platform add android
+cordova platform ls
+cordova build
+
+adb install F:\android\mogoksayadaw\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+
+adb uninstall com.mogoksayadaw.mogoksayadaw
+
+
+
+function yourFunction(){
+    window.scrollTo(0, document.body.scrollHeight);
+}
+setInterval(yourFunction, 10000);
+setInterval(yourFunction, 500);  //Will run the function every half a second(500ms = 0.5s)
+setInterval(yourFunction, 5000);  //Will run the function every 5 seconds
+setInterval(yourFunction, 9000);  //Will run the function every 9 seconds
+setInterval(yourFunction, 10000);  //Will run the function every 10 seconds
+Alert "Hello" every 3 seconds (3000 milliseconds):
+Tip: 1000 ms = 1 second.
+
+Tip: To execute a function only once, after a specified number of milliseconds, use the setTimeout() method.
+
+
+var myVar = setInterval(myTimer, 10000);
+
+function myTimer() {
+  window.scrollTo(0, document.body.scrollHeight);
+}
+
+function myStopFunction() {
+  clearInterval(myVar);
+}
+
+
+https://stackoverflow.com/questions/37451219/how-to-keep-a-command-running-in-loop-in-browser-console
+https://stackoverflow.com/questions/11715646/scroll-automatically-to-the-bottom-of-the-page/41559340
+
+add custom font to a cordova project
+
+@font-face {
+  font-family: "my-font";
+  src: url("../assets/myfonts.ttf");  // Give relative path to your css file.
+}
+
+CSS
+
+.class-myfont { 
+    font-family: my-font;
+}
+
+HTML
+
+<span class="class-myfont">Hello there</span>
+
+
+https://stackoverflow.com/questions/43269174/add-custom-font-to-a-cordova-project
+https://gist.github.com/spascalb/4727879
+
+Downloading youtube playlist with youtube-dl, skipping existing files
+https://askubuntu.com/questions/673442/downloading-youtube-playlist-with-youtube-dl-skipping-existing-files
